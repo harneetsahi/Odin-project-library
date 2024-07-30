@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Library</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <article class="form-container">
+      <form action="#" class="form" id="form">
+        <h2>Add a book</h2>
+        <div class="text">
+          <label for="title">Book title</label>
+          <input type="text" name="title" id="title" required />
+        </div>
+        <div class="text">
+          <label for="author">Author</label>
+          <input type="text" name="author" id="author" required />
+        </div>
+        <div class="text">
+          <label for="pages">Pages</label>
+          <input type="number" name="pages" id="pages" required />
+        </div>
+        <div class="read-text">
+          <label for="read">Read</label>
+          <input type="checkbox" name="read" id="read" />
+        </div>
+      </form>
+
+      <div class="primaryBtns">
+        <button class="addBtn btn" type="submit" form="form">
+          Add to the library
+        </button>
+        <button class="cancelBtn btn">Cancel</button>
+      </div>
+    </article>
+
+    <div class="header-container">
+      <h2 class="heading">My library</h2>
+      <button class="openModal">Add a new book</button>
+    </div>
+
+    <div class="book-container"></div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
