@@ -15,21 +15,32 @@ const removeBtn = document.querySelector(".remove-btn");
 
 let myLibrary = [];
 
-function Book(title, author, pages, read) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
+// function Book(title, author, pages, read) {
+//   this.title = title;
+//   this.author = author;
+//   this.pages = pages;
+//   this.read = read;
+// }
+
+// Book.prototype.toggleRead = function () {
+//   this.read = !this.read;
+// };
+
+// function toggleRead(i) {
+//   myLibrary[i].toggleRead();
+//   renderDisplay();
+// }
+
+class Book {
+  constructor(title, author, pages, read) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
 }
 
-Book.prototype.toggleRead = function () {
-  this.read = !this.read;
-};
 
-function toggleRead(i) {
-  myLibrary[i].toggleRead();
-  renderDisplay();
-}
+
 
 function removeBook(i) {
   myLibrary.splice(i, 1);
