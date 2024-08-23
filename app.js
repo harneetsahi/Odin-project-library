@@ -39,8 +39,10 @@ class Book {
     this.read = read;
 }
 
-
-
+function toggleRead(i) {
+  myLibrary[i].read = !myLibrary[i].read;
+  renderDisplay();
+}
 
 function removeBook(i) {
   myLibrary.splice(i, 1);
