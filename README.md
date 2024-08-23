@@ -1,6 +1,7 @@
 Deployed at https://harneetsahi.github.io/Odin-project-library/
 
-# Update: in the second branch of this project, I replaced the constructor function with the new class function.
+# Update
+in the second branch of this project, I replaced the constructor function with the new class function. I also updated the code for toggling read status and put it outside in the global scope.
 
 # Library Project
 This Project allows you to add books to the library with an option to toggle 'read status'.
